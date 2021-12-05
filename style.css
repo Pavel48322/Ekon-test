@@ -29,7 +29,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* HEADER
 ================================ */
+.search {
+    display: none;
+}
+.menu {
+    display: none;
+}
 
+.header__icon__one {
+    display: none;
+}
 .header {
     height: 101px;
 }
@@ -381,13 +390,9 @@ input::-webkit-search-results-decoration { display: none; }
     height: 1910px;
 }
 
-.catalog__inner__right__header__left__block {
-    display: none;
-}
 
-.catalog__inner__right__catalog__item__img__two {
-    display: none;
-}
+
+
 
 .catalog__inner__left__header {
     display: flex;
@@ -483,7 +488,11 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 .catalog__checkbox__text__active {
-    font-weight: 500;
+    font-weight: 500 !important;
+}
+
+.clean__all {
+    cursor: pointer;
 }
 
 .catalog__inner__left__equipment__title__two {
@@ -565,6 +574,10 @@ top: -4px !important;
 }
 
 .catalog__inner__left__equipment__list__checkbox__one {
+    padding-bottom: 42px;
+}
+
+.catalog__inner__left__equipment__list__checkbox__two {
     padding-bottom: 60px;
 }
 
@@ -1177,6 +1190,7 @@ footer {
     letter-spacing: -1.05px;
     margin-top: -4px;
     margin-left: 7px;
+    margin-right: 5px;
 
 }
 
@@ -1200,6 +1214,13 @@ footer {
     margin-left: 5px;
 }
 
+.catalog__inner__right__header__left__block {
+    display: none;
+}
+
+.catalog__inner__right__catalog__item__img__two {
+    display: none !important;
+}
 @media (max-width: 414px) {
     .intro {
         display: none;
@@ -1392,11 +1413,12 @@ footer {
     .catalog__inner__right__header__left {
         padding-left: 8px;
         padding-bottom: 30px;
+        display: flex;
     }
 
-    /* .catalog__inner__left {
+    .catalog__inner__left {
         display: none;
-    } */
+    }
 
     .catalog__inner__right__header {
         display: none;
@@ -1425,7 +1447,7 @@ footer {
     }
 
     .catalog__inner__right__catalog__item__img__two {
-        display: block;
+        display: block !important;
     }
 
     .catalog__inner__right__catalog__item:nth-child(3n-2) .catalog__inner__right__catalog__item__img {
@@ -1643,7 +1665,7 @@ line-height: 11px;
     }
 
     .catalog__filt__phone {
-        display: flex;
+        display: flex !important;
         margin-left: 5px;
         margin-right: 1px;
         padding-left: 14px;
@@ -1721,6 +1743,14 @@ line-height: 11px;
 
     .catalog__inner__left__equipment__list {
         margin-top: 9px;
+    }
+
+    .catalog__inner__left__equipment__list__checkbox__item {
+        display: flex !important;
+    }
+
+    .catalog__inner__left__equipment__list__checkbox__one {
+        padding-bottom: 60px;
     }
 
     .catalog__inner__left__equipment__list__checkbox__item label {
@@ -2008,6 +2038,55 @@ line-height: 11px;
         line-height: 18px;
         color: #2B2E34;
         padding-bottom: 30px;
+    }
+
+    .search {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: #fff;
+        padding-top: 16px;
+        width: 100%;
+    }
+
+    .search_icon__two {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin-top: 22px;
+        margin-left: -2px;
+    }
+
+    .search__input {
+        padding-top: 9px;
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    .search__input__phone {
+        width: 100%;
+        height: 54px;
+        border: 0px;
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2B2E34;
+        padding-left: 34px;
+        padding-top: 8px;
+    }
+
+    .arrow__icon {
+        width: 24px;
+        height: 10px;
+        position: absolute;
+        right: 0px;
+        margin-top: 28px;
+        margin-right: -1px;
     }
 
 
